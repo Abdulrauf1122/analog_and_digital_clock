@@ -35,7 +35,7 @@ An interactive **analog and digital clock** that dynamically displays the curren
 
 ## Screenshot
 
-(watch.jpg)
+![Clock Preview](watch.jpg)
 
 ## Future Enhancements
 
@@ -45,4 +45,4 @@ An interactive **analog and digital clock** that dynamically displays the curren
 
 ## License
 
-This project is licensed under the [MIT License].
+This project is licensed under the [MIT License](LICENSE).
