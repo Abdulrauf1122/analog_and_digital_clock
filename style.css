@@ -1,0 +1,149 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(145deg, #1c1c1c, #313131);
+  font-family: 'Arial', sans-serif;
+  color: white;
+  overflow: hidden;
+}
+
+.watch-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Analog Watch */
+.analog-watch {
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, #2e2e2e 60%, #1b1b1b);
+  border: 8px solid #f39c12;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.7), 0 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+.clock-face {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.hand {
+  position: absolute;
+  width: 50%; /* Adjust width to fit inside clock */
+  height: 4px;
+  background: white;
+  transform-origin: 100%; /* Rotate from the end of the hand */
+  transform: rotate(90deg); /* Initial rotation */
+  border-radius: 2px;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transition: transform 0.05s cubic-bezier(0.4, 2.3, 0.3, 1);
+  transform-origin: 0% 50%; /* Fixed: Ensures pivot at the center */
+}
+
+.hand.hour {
+  width: 30%;
+  height: 6px;
+  background: #f39c12;
+}
+
+.hand.minute {
+  width: 40%;
+  height: 4px;
+  background: #e67e22;
+}
+
+.hand.second {
+  width: 48%;
+  height: 2px;
+  background: #e74c3c;
+}
+
+.center-circle {
+  width: 10px;
+  height: 10px;
+  background: #f1c40f;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10; /* Keeps the circle above the hands */
+}
+
+/* Hour and Minute Markings */
+#clock-markings {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.clock-mark {
+  position: absolute;
+  width: 6px;
+  height: 20px;
+  background: #f39c12;
+  top: 0;
+  left: 50%;
+  transform-origin: center 170px; /* Distance from the center */
+}
+
+.clock-mark.minute {
+  height: 10px;
+  width: 2px;
+  background: #e67e22;
+}
+
+/* Hour Numbers */
+#hour-numbers {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 97%;
+  left: 99%;
+  transform: translate(-50%, -50%);
+}
+
+.hour-number {
+  position: absolute;
+  color: #f1c40f;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+  transform: translate(-50%, -50%); /* Perfect centering */
+}
+
+
+/* Digital Watch */
+.digital-watch {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#digital-time {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #f1c40f;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+#date-display {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #e67e22;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+}
