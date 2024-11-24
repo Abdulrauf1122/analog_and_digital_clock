@@ -1,4 +1,3 @@
-```markdown
 # Advanced Analog and Digital Clock
 
 An interactive **analog and digital clock** that dynamically displays the current time and date with a sleek, modern design. Perfect for learning or showcasing DOM manipulation, CSS animations, and JavaScript functionality.
@@ -36,7 +35,7 @@ An interactive **analog and digital clock** that dynamically displays the curren
 
 ## Screenshot
 
-![Clock Preview](path/to/screenshot.png)
+![Clock Preview](watch.jpg)
 
 ## Future Enhancements
 
