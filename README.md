@@ -13,11 +13,11 @@ An interactive **analog and digital clock** that dynamically displays the curren
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/analog-digital-clock.git
+   git clone https://github.com/Abdulrauf1122/analog_and_digital_clock.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd analog-digital-clock
+   cd analog_and_digital_clock
    ```
 3. Open `index.html` in your browser to view the clock.
 
@@ -35,7 +35,7 @@ An interactive **analog and digital clock** that dynamically displays the curren
 
 ## Screenshot
 
-![Clock Preview](watch.jpg)
+(watch.jpg)
 
 ## Future Enhancements
 
